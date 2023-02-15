@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADVKUS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="http://www.foodland.ru/" target="_blank" class="logo"><img src="logo-new.png" alt=""></a>
+            <ul>
+                <form action="http://www.foodland.ru/about/" target="_blank">
+                    <button class="button" >Домашняя </button>
+                </form>
+                <form action="http://www.foodland.ru/catalog/" target="_blank">
+                    <button class="button"> Mеню </button>
+                </form>
+                <form action="http://www.foodland.ru/new/" target="_blank">
+                    <button class="button"> Новинки </button>
+                </form>
+                <form action="http://www.foodland.ru/contacts/" target="_blank">
+                    <button class="button"> Контакты </button>
+                </form>
+                
+
+
+
+                <!-- <li class="active"><a href="http://www.foodland.ru/" target="_blank">Домашняя</a></li>
+                <li ><a href="http://www.foodland.ru/catalog/" target="_blank">Меню</a></li>
+                <li><a href="http://www.foodland.ru/new/" target="_blank">Новинки</a></li>
+                <li><a href="http://www.foodland.ru/contacts/" target="_blank">Контакты</a></li> -->
+            </ul>
+
+            <!--  -->
+        </header>
+        <!-- Start Form -->
+        <div class="container">
+            <div class="card">
+                <a class="login">Log in</a>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span class="user">Username</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Password</span>
+                </div>
+
+                <button class="enter">Enter</button>
+
+            </div>
+        </div>
+        <!-- End Form -->
+        <div class="content">
+            <div class="textBox">
+                <h2>Wow!!! For taste and snack <br>Wow!!! <span>"Foodland" WoW !!!'</span></h2>
+                <p>Благодаря опыту и знанию своего дела мы обеспечиваем клиентам максимальный уровень сервиса во всем:
+                    от своевременной поставки до выкладки на полку.
+                    Мы постоянно предлагаем потребителю новые и интересные продукты, не имеющие аналогов <br>Мы
+                    предлагаем широкую линейку качественных продуктов для профессионалов ресторанного бизнеса. Мы
+                    понимаем, что посетители возвращаются в любимое кафе или ресторан, если все по-настоящему вкусно.
+                    Поэтому в нашем ассортименте нет дешевых суррогатов, мы предлагаем только качественные и натуральные
+                    молочные продукты известных марок, пользующиеся постоянным спросом. <br>В нашем ассортименте
+                    представлены сухие молочные продукты, сливочное масло, сыры и сливки для самых требовательных
+                    производителей. Мы обеспечиваем точное соответствие нашей продукции вашей спецификации и
+                    требованиям.
+
+
+                </p>
+                <!-- <a href="http://www.foodland.ru/recipes/" target="_blank">Learn More</a> -->
+
+                <button>
+                    ENTER
+                    <div id="clip">
+                        <div id="leftTop" class="corner"></div>
+                        <div id="rightBottom" class="corner"></div>
+                        <div id="rightTop" class="corner"></div>
+                        <div id="leftBottom" class="corner"></div>
+                    </div>
+                    <span id="rightArrow" class="arrow"></span>
+                    <span id="leftArrow" class="arrow"></span>
+                </button>
+
+            </div>
+            <div class="imgBox">
+                <img src="fon3-4-removebg-preview.png" class="Foodland" alt="fon">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="fon3-4-removebg-preview.png"
+                    onclick="imgSlider('fon3-4-removebg-preview.png');changeCircleColor('#6b6a68')" alt=""></li>
+            <li><img src="1mal-removebg-preview.png"
+                    onclick="imgSlider('451-removebg-preview.png');changeCircleColor('#b3b007')" alt=""></li>
+            <li><img src="mal2-removebg-preview.png" onclick="imgSlider('1-1.png');changeCircleColor('#07818c')" alt="">
+            </li>
+            <li><img src="mal3-removebg-preview.png"
+                    onclick="imgSlider('452-removebg-preview.png');changeCircleColor('#610e23')" alt=""></li>
+            <li><img src="mal4-removebg-preview.png"
+                    onclick="imgSlider('454-removebg-preview.png');changeCircleColor('#b5a47f')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://vk.com/publicfoodland"><img src="vk-social-network-logo-removebg-preview (1).png"
+                        alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="telegram__1_-removebg-preview.png" alt=""></a></li>
+            <h6 style="color: rgb(249, 8, 8); font-size: 20px;">Alaska .Alex.</h6>
+        </ul>
+
+
+
+
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.Foodland').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
